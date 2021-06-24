@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content</title>
+    <style>
+        .container{
+            display: flex;
+            display: -webkit-flex;
+
+            width: 400px;
+            height: 250px;
+            background-color: gainsboro;
+            border-radius: 6px;
+            border: 1px solid black;
+
+            justify-content: flex-start;/* valor por omisíon */
+            justify-content: flex-end;/* Los items son alineados al final */
+            justify-content: center;/* Los items son alineados con respecto al centro del contenedor */
+            justify-content: space-between;/* Lo items son alineados en eje pegado a sus costados */
+            justify-content: space-around;/* Los items son colocados proporcionalmente */
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            margin: 10px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid springgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+    
+</body>
+</html>
