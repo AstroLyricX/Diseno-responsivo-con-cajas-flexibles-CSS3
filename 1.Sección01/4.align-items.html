@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .container{
+            display: flex;
+            display: -webkit-flex;
+
+            width: 400px;
+            height: 250px;
+            background-color: grey;
+
+            /* -webkit-align-item: stretch; */
+            align-items: stretch; /*Valor por omisión. Estira el item para abarcar el contenedor*/
+            
+            align-items: flex-start;/*Los items son colocados al inicio del contenedor*/
+
+            align-items: flex-end;/*Los items son colocados al final del contenedor*/
+
+            align-items: center;/*Los items son centrados en el eje complementario*/
+
+            align-items: baseline;/*Los items son colocados en la parte superior del contenedor*/
+        }
+        .item{
+            min-width: 100px;
+            min-height: 100px;
+            background-color: violet;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Items1</div>
+        <div class="item">Items2</div>
+        <div class="item">Items3</div>
+    </div> 
+</body>
+</html>
